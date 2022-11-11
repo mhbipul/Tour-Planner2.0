@@ -4,16 +4,40 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-/* :root{
-    --primary: #86b817;
+:root{
+    --primary: #0275d8;
     --secodary: #fe8800;
     --light : #f5f5f5;
     --dark : #14141f;
 
-} */
+}
 .first-section{
     background: linear-gradient(rgba(20,20,31,0.7),rgba(20,20,31,0.7)),url(../img/bg-hero.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* service-section  */
+.service-item{
+    box-shadow: 0 0 45px rgba(0,0,0,0.08) ;
+}
+.service-item:hover{
+    background: var(--primary);
+}
+.service-item *{
+    transition: 0.5s;
+}
+.service-item:hover *{
+    color: var(--light) !important;
+}
+
+/* Destination Section  */
+.destination img {
+    transition: .5s;
+}
+
+.destination a:hover img {
+    transform: scale(1.1);
+}
+
